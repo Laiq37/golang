@@ -1,0 +1,5 @@
+{
+    "connection_string":"root:root@tcp(localhost:3306)/jwt_demo?parseTime=true",
+    "port":"8080",
+    "secret_key":"jwtAuthTokenSecretKey"
+}

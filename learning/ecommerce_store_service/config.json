@@ -1,0 +1,5 @@
+{
+    "connection_string":"root:root@tcp(127.0.0.1:3306)/my_shop?parseTime=true",
+    "port": 8000,
+    "secret_key":"my_store_JWT_key"
+}
