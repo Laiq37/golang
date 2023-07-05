@@ -1,7 +1,8 @@
 package entities
 
 type OrderItem struct {
-	OrderID   uint
-	Quantity  int
-	ProductID uint
+	OrderID   uint   `json:"-"`
+	Quantity  int    `json:"quantity"`
+	ProductID uint   `json:"productId"`
+	Name      string `json:"productName"`
 }

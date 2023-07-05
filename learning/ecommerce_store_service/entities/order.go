@@ -1,14 +1,10 @@
 package entities
 
-import (
-	"time"
-)
-
 type Order struct {
-	ID         uint `gorm:"primary_key"`
+	ID         uint `json:"id" gorm:"primary_key"`
 	UserID     uint
-	OrderDate  time.Time
-	OrderItems []OrderItem
-	Payments   []Payment
-	Status     string
+	OrderTime  int64       `json:"orderTime"`
+	OrderItems []OrderItem `json:"orderItems"`
+	Payment    Payment     `json:"payment"`
+	Status     string      `json:"status" gorm:"default:'pending'"`
 }

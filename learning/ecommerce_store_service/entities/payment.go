@@ -4,6 +4,6 @@ import "gorm.io/gorm"
 
 type Payment struct {
 	gorm.Model
-	UserID  uint
 	OrderID uint
+	Time    int64
 }

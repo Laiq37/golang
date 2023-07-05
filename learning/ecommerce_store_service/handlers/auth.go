@@ -15,7 +15,7 @@ func Signup(c *fiber.Ctx) error {
 
 	//if body missing
 	if len(c.Body()) == 0 {
-		return c.Status(404).JSON(&fiber.Map{
+		return c.Status(400).JSON(&fiber.Map{
 			"success": false,
 			"message": "body is missing",
 			"data":    nil,

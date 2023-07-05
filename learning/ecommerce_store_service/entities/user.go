@@ -18,7 +18,6 @@ type User struct {
 	City       string `json:"state"`
 	PostalCode string `json:"postal_code"`
 	Type       string `json:"type,omitempty"`
-	Payments   []Payment
 	CartItems  []CartItem
 	Orders     []Order
 }
